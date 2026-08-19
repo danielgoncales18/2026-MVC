@@ -1,0 +1,68 @@
+@model mvc2026.Cliente
+@{
+    ViewData["title"] = "Cadastro de clientes";
+}
+
+<div class="container">
+    <h1 class="text-center mt-3 fw-bold">cadastro de cliente</h1>
+    <form action="#" method="get">
+        <div class="row">
+            <div class="col-12 col-sm-4">
+                <label asp-for="Id">codigo</label>
+                <input type="number" class="form-control" placeholder="Codigo do cliente" asp-for="Id" />
+            </div>
+            <div class="col-12 col-sm">
+                <label asp-for="Nome">nome completo</label>
+                <input type="number" class="form-control" placeholder="Nome completo" asp-for="Id" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-4">
+                <label asp-for="Endereco"></label>
+                <input type="number" class="form-control" placeholder=" seu Endereco" asp-for="Id" />
+            </div>
+            <div class="col-12 col-md-4">
+                <label asp-for="Bairro">nome do bairro</label>
+                <input type="number" class="form-control" placeholder="bairro" asp-for="Id" />
+            </div>
+            <div class="col-12 col-sm-4">
+                <label asp-for="CPF">CPF</label>
+                <input type="number" class="form-control" placeholder="CPF" asp-for="Id" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md">
+                <label asp-for="Celular">Celular</label>
+                <input type="number" class="form-control" placeholder="(99)9999.999" asp-for="Id" />
+            </div>
+            <div class="col-4">
+ <div class="row">
+            <div class="col-12 col-md">
+                <label asp-for="DataNascimento">DataNascimento</label>
+                <input type="number" class="form-control" placeholder="12,03,2003" asp-for="Id" />
+            </div>
+             <div class="row">
+            <div class="col-12 col-md">
+                <label asp-for="Observacao">Observacao</label>
+                <input type="number" class="form-control" placeholder="Observacao" asp-for="Id" />
+            </div>
+            </div>
+        </div>
+         <div class="row">
+            <div class="col">
+                
+            </div>
+            <div class="col-4">
+                
+            </div>
+        </div>
+    </form>
+    <div class="row mt-5">
+        <div class="col text-center">
+            <input type="reset" value="Limpar" class="w-50 btn btn-outline-secondary" />
+        </div>
+        <div class="col text-center">
+            <input type="submit" value="Enviar" class="w-50 btn btn-primary" />
+        </div>
+    </div>
+</div>
